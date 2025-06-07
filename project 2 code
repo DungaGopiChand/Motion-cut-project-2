@@ -1,0 +1,17 @@
+import random
+
+adjectives = ["Certified", "Global", "Dynamic", "Senior", "Quantum", "Virtual"]
+roles = ["Meme", "Blockchain", "Unicorn", "AI", "Bubble Tea", "Space"]
+suffixes = ["Ninja", "Engineer", "Strategist", "Guru", "Designer", "Wizard"]
+
+def generate_fake_job_title():
+    title = f"{random.choice(adjectives)} {random.choice(roles)} {random.choice(suffixes)}"
+    return title
+
+while True:
+    print("Your fake job title is:", generate_fake_job_title())
+
+    again = input("Want another one? (yes/no): ").lower()
+    if again != "yes":
+        print("Thanks for using the Fake Job Title Generator! 🚀")
+        break
